@@ -141,7 +141,8 @@ class GlobalSearch(BaseSearch):
             query=query,
             **self.reduce_llm_params,
         )
-
+        print("-------------check-point-1-------------------")
+        print(context_records)
         return GlobalSearchResult(
             response=reduce_response.response,
             context_data=context_records,

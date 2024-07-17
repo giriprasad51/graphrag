@@ -85,7 +85,8 @@ class LocalSearch(BaseSearch):
                 callbacks=self.callbacks,
                 **self.llm_params,
             )
-
+            print("-------------check-point-1-------------------")
+            print(context_records)
             return SearchResult(
                 response=response,
                 context_data=context_records,
